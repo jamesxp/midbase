@@ -408,7 +408,13 @@ $(function () {
 
             }
         );
-
+        Swal.fire({
+            title: '提示词已提交',
+            text: '示例图片生成进行中，请等待结果，请勿重复提交！！！',
+            icon: 'success',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: '确定'
+        });
         timeFlag = window.setInterval(getPic, 2000)
     })
 
